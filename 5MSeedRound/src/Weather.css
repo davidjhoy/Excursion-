@@ -1,0 +1,14 @@
+.weatherParent{
+    background-color: azure;
+    padding: 2%;
+    color: black;
+    position: fixed;
+    box-sizing: content-box;
+    block-size: 250pt;
+    width: 380px;;
+    
+}
+.weatherTitle{
+    font-size: xx-large;
+    color: black;
+}

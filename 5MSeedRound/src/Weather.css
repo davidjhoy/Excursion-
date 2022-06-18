@@ -2,7 +2,9 @@
     background-color: azure;
     padding: 2%;
     color: black;
-    position: fixed;
+   
+    margin-left: 500pt;
+    margin-top: 0pt;
     box-sizing: content-box;
     block-size: 250pt;
     width: 380px;;

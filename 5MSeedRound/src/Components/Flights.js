@@ -1,5 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import '../App.css';
+
+
+
 function Flights({city}){
 const [homeCity, setHomeCity] = useState('');
 const [inputCity, setInputCity] = useState('London');
@@ -8,6 +11,8 @@ const [toAirport, setToAirport] = useState('');
 let date = new Date().toISOString().slice(0, 10)
 
 let tomorrow = "2022-07-19";
+
+
 
 const handleSubmit = (e)=>{
     e.preventDefault()
@@ -55,17 +60,12 @@ fetch(toUrl, options)
 },[city])
 
 
-console.log(toAirport, fromAirport)
 
 
-//  
-
-// },[inputCity, city])
-  
 
     return(
         <div className='flightParent'>
-            <h2>Flights from {inputCity} to {city}</h2>
+            <h1>Flights from {inputCity} to {city}</h1>
             <h3>HomeCity:</h3>
             <form onSubmit = {handleSubmit}>
                 <input 

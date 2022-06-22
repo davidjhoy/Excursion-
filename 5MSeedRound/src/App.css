@@ -1,18 +1,20 @@
 .App {
   text-align: center;
+  background-color: antiquewhite;
 }
 
 
 
 .App-header {
   background-color: #9ad0bc;
-  min-height: 10vh;
+  min-height: 8vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: crimson;
+  font-size: calc(15px + 2vmin);
+  color: rgb(229, 247, 242);
+  
 }
 
 .App-link {
@@ -21,27 +23,57 @@
 
 
 .weatherParent{
-float: left;
-width: 45%;
-margin-left: 2%;
-margin-top: 2%;
-background-color: rgb(255, 255, 220);
-height: 250pt;
-border:  solid rgb(63, 207, 171);
+  float: right;
+  width: 45%;
+  height: 550pt;
   
 }
 .flightParent{
   float: right;
   width: 45%;
-  margin-right: 2%;
-  margin-top: 2%;
-  background-color: rgb(255, 255, 220);
-  height: 250pt;
-  border:  solid rgb(63, 207, 171);
+  height: 550pt;
+ 
   
 }
 .weatherTitle{
   font-size: xx-large;
   color: black;
 }
+.justCity{
+  float: left;
+  width: 50%;
+  background-color: rgb(189, 189, 114);
+  height: 550pt;
+}
+.overView{
+  background-color:beige;
+  float: left;
+  width: 100%;
+  height: 550pt;
+  padding-top: 0%;
+}
 
+.cityTitleFont{
+  color: rgba(237, 236, 232, 0.977);
+  font-size: 2cm;
+  padding-top: 0%;
+  width: 100%;
+  vertical-align: top;
+
+}
+.cityPicture{
+  vertical-align: bottom;
+  width: 100%;
+}
+
+#flightsLink{
+  margin-right: 10pt;
+  
+}
+#weatherLink{
+  margin-right: 10pt;
+}
+
+#eventsLink{
+  margin-right: 10pt;
+}

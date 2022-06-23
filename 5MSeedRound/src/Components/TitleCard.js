@@ -44,7 +44,7 @@ function TitleCard({city}) {
     const renderImages = ()=>{
         return(
           <>
-            <img src = {picArray[0]} />
+            <img src = {picArray[0]} className="image-edit" />
           </>
         )
       }

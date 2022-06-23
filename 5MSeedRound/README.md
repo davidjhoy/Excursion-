@@ -1,3 +1,11 @@
+##### Justin and David's Travel Extravaganza
+
+This project is meant to be a one stop shop that meets the entirety of a person's travel needs and expectations. 
+
+### Introduction
+
+This app boasts a way for the user to get flight information, hotel information, and a quick glimpse at the weather -- all things a person would need before booking a weekend getaway. This is meant for the planning phase of the trip. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

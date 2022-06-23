@@ -30,7 +30,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h3>Pick a City!</h3>
+        <div className="header-parent">
+        <h1 className="header-text">Excursion</h1> 
         <form onSubmit={handleCityChange}>
           <input
           type ="text"
@@ -40,6 +41,7 @@ function App() {
           />
           <button>Submit</button>
         </form>
+        </div>
       </header>
       <TitleCard city = {city}/>
       

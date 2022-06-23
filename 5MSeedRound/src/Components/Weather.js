@@ -51,9 +51,9 @@ const url = `https://weatherapi-com.p.rapidapi.com/forecast.json?q=${city}&days=
     return(
     <div className = "weatherParent">
         <h2 className='weatherTitle'>{city} 3 Day Forecast:</h2>
-        <h3>🔥{gotTemp ? dayOneForecast.day.avgtemp_f : "loading ..."} F</h3>
-        <h3>🔥🔥{gotTemp ? dayTwoForecast.day.avgtemp_f : "loading ..."} F</h3>
-        <h3>🔥{gotTemp ? dayThreeForecast.day.avgtemp_f : "loading ..."} F</h3>
+        <h3>Day 1: {gotTemp ? dayOneForecast.day.avgtemp_f : "loading ..."} F</h3>
+        <h3>Day 2: {gotTemp ? dayTwoForecast.day.avgtemp_f : "loading ..."} F</h3>
+        <h3>Day 3: {gotTemp ? dayThreeForecast.day.avgtemp_f : "loading ..."} F</h3>
      
         
     </div>

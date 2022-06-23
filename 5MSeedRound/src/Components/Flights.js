@@ -66,7 +66,7 @@ fetch(toUrl, options)
     return(
         <div className='flightParent'>
             <h1>Flights from {inputCity} to {city}</h1>
-            <h3>HomeCity:</h3>
+            <h3>Flying From:</h3>
             <form onSubmit = {handleSubmit}>
                 <input 
                 type = "text"

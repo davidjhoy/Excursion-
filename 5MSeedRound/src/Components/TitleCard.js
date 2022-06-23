@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import '../App.css';
 import Weather from './Weather';
 import Flights from './Flights';
+import Hotel from './Hotel';
+//import events or hotels component
 import {Switch, Route, Link } from "react-router-dom";
 
 
@@ -57,7 +59,7 @@ function TitleCard({city}) {
                     <div>
                         <Link id = "flightsLink" to = "/flights">Flights</Link>
                         <Link id = "weatherLink" to = "/weather">Weather</Link>
-                        <Link id = "eventsLink" to = "/events">Events</Link>
+                        <Link id = "eventsLink" to = "/hotels">Hotels</Link>
                     </div>
                 </div>
             </div>
@@ -72,9 +74,13 @@ function TitleCard({city}) {
                     <Route path = "/weather">
                         <Weather city ={city} />
                     </Route>
+                    <Route path = "/hotels">
+                        <Hotel city ={city} />
+                    </Route>
                     <Route path="*">
                         <h2>404 not found</h2>
                     </Route>
+                    
                 </Switch>
                 
             </div>

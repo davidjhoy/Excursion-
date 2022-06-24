@@ -7,7 +7,7 @@ import {Switch, Route } from "react-router-dom";
 function App() {
   const[inputCity, setInputCity] = useState('')
   const [city, setCity] = useState('Miami')
-
+ 
   
 
   
@@ -15,6 +15,18 @@ function App() {
   const handleCityChange = (e)=>{
     e.preventDefault()
     setCity((inputCity))
+
+    fetch('  http://localhost:3000/cities', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(
+        {id: Math.random(),
+        city: inputCity}
+      )
+
+    })
 
   }
   const handleChange = (e)=>{
@@ -40,8 +52,10 @@ function App() {
           />
           <button>Submit</button>
         </form>
+        
       </header>
       <TitleCard city = {city}/>
+      
       
         
       

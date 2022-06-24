@@ -3,6 +3,7 @@ import '../App.css';
 import Weather from './Weather';
 import Flights from './Flights';
 import Hotel from './Hotel';
+import Visited from './Visited';
 //import events or hotels component
 import {Switch, Route, Link } from "react-router-dom";
 
@@ -60,6 +61,7 @@ function TitleCard({city}) {
                         <Link id = "flightsLink" to = "/flights">Flights</Link>
                         <Link id = "weatherLink" to = "/weather">Weather</Link>
                         <Link id = "eventsLink" to = "/hotels">Hotels</Link>
+                        <Link id = "visitedLink" to = "/visited">Visited Cities</Link>
                     </div>
                 </div>
             </div>
@@ -76,6 +78,9 @@ function TitleCard({city}) {
                     </Route>
                     <Route path = "/hotels">
                         <Hotel city ={city} />
+                    </Route>
+                    <Route path="/visited">
+                        <Visited city = {city}/>
                     </Route>
                     <Route path="*">
                         <h2>404 not found</h2>

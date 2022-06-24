@@ -16,7 +16,19 @@ function App() {
     e.preventDefault()
     setCity((inputCity))
 
+    fetch('  http://localhost:3000/cities', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(
+        {id: Math.random(),
+        city: inputCity}
+      )
+
+    })
   }
+          
   const handleChange = (e)=>{
     setInputCity(e.target.value)
   }
